@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+    color: #fff;
+    background: url('weight_management.jpeg'); 
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position:center-top;
+    background-position-x: 50%;
+    background-position-y: 0%;
+}
+#wrapper {    
+	width: 400px;
+	padding: 50px 20px;
+	margin: 100px auto;
+	background-color: #35353f;
+	/*background-color: rgba(4, 2, 16, 0.33);*/
+	opacity: 0.8;
+}
+.heading {
+	text-align: center;
+}
+.form_label {
+	margin: 20px 20px 20px 80px ;
+}
+#growth, #weight {
+	margin: 10px;
+	width: 40px;
+}
+#growth {
+	margin-left: 14px;
+}
+#submit {
+	display: block;
+	margin: 20px auto ;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: #292c2e;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+#submit:hover, .active {
+	color: #000;
+    background-color: #b8bfc2;
+}
+.output {
+	margin-left: 30px;
+}
+.result_table, .result_table th, .result_table td {
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+}
+.result_table {
+	margin: 30px auto 0px;
+}

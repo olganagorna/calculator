@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Калькулятор ваги</title>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="stylesheet" href="styles.css"/>
+        <!--[if lt IE 9]-->
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <!--[endif]-->
+    </head>
+	<body>
+		<div id="wrapper">
+			<h2 class="heading">Вхідні параметри:</h2>
+			<form id="" onsubmit="return false">
+			<label class="form_label" for="growth">Введіть ваш зріст</label>
+			<input type="number" id="growth" name="growth" min="1" max="210" required>см<br>
+			<label class="form_label" for="weight">Введіть вашу вагу</label>
+			<input type="number" id="weight" name="weight" min="1" max="200" required>кг<br>		
+			<input type="submit" id="submit" value="Результат"><br>
+			<span class="output">Ваш індекс маси тіла:</span><span class="output" id="result_output"></span>
+			</form>
+			<table class="result_table">
+				<tr>
+					<th>Індекс маси тіла</th>
+					<th>Класифікація</th>
+				</tr>
+				<tr id="result_1" class="result">
+					<td>менше 18,5</td>
+					<td>Недостатня маса</td>
+				</tr>
+				<tr id="result_2"  class="result">
+					<td>18,5—24,9</td>
+					<td>Норма</td>
+				</tr>
+				<tr id="result_3" class="result">
+					<td>25,0—29,9</td>
+					<td>Передожиріння (гладкість)</td>
+				</tr>
+				<tr id="result_4" class="result">
+					<td>30,0—34,9</td>
+					<td>Ожиріння I ступеня</td>
+				</tr>
+				<tr id="result_5" class="result">
+					<td>35,0—39,9</td>
+					<td>Ожиріння II ступеня</td>
+				</tr>
+				<tr id="result_6" class="result">
+					<td>більше 40,0</td>
+					<td>Ожиріння III ступеня</td>
+				</tr>
+			</table>
+		</div>
+		<script src="main.js" type="text/javascript"></script>
+	</body>
+</html>
